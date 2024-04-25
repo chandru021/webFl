@@ -1,25 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import React , {useState} from 'react';
+import Header from './complaint_page/Header';
+import Sidebar from './complaint_page/SideBar';
+import ComplaintsTable from './complaint_page/CompliantTable';
+import './complaint_page/App.css';
 
 function App() {
+  const [activeTab, setActiveTab] = useState('complaint');
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header />
+      <div className="container">
+        <Sidebar active={activeTab} setActive={setActiveTab} />
+        <div>
+          {activeTab === 'complaint' && <ComplaintsTable />}
+          {activeTab === 'heatmap' && <div>Heat Map Content Here</div>}
+          {activeTab === 'profile' && <div>Profile Content Here</div>}
+        </div>
+      </div>
     </div>
   );
 }
+
 
 export default App;

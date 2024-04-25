@@ -1,0 +1,23 @@
+.complaintsTable {
+    overflow-y: auto;
+    flex-grow: 1;
+    padding: 20px;
+    width: calc(175% - 250px);
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    
+  }
+  
+  th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  th {
+    background-color: #4CAF50;
+    color: white;
+  }
