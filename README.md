@@ -1,3 +1,6 @@
+About Project
+Government grievance redressal procedures frequently suffer from inefficiencies and communication bottlenecks in an era characterized by digital change and citizen empowerment. This initiative offers a novel approach for a more user friendly government grievance lodging system. Our effort seeks to expedite the grievance submission and tracking by leveraging cutting-edge technologies such as Large language models, Retrieval Augmented Generation, location based analytics, vector embeddings and natural language processing. Using an intuitive smartphone application, citizens may effortlessly record complaints and track the advancement of their resolution. Similarly, officers can look at citizens' complaints using the web portal.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
