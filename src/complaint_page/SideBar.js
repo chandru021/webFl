@@ -12,12 +12,12 @@ function Sidebar() {
       >
         Complaint
       </button>
-      <button
+      {/* <button
         className={`sidebar-button ${active === 'heatmap' ? 'active' : ''}`}
         onClick={() => setActive('heatmap')}
       >
         Heat Map
-      </button>
+      </button> */}
       <button
         className={`sidebar-button ${active === 'profile' ? 'active' : ''}`}
         onClick={() => setActive('profile')}
